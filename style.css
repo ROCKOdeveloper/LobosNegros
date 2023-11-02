@@ -1,0 +1,45 @@
+/*--------------------*/
+/*     BASIC STYLE    */
+/*--------------------*/
+
+html {
+	overflow-x:hidden;
+	background-color: black;
+}
+body,h1,h2,h3,h4,h5,h6{
+	font-family: 'Courier Prime', monospace !important;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0px;
+}
+
+.background {
+	background-image: url("https://i.gifer.com/1Kte.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+/*--------------------*/
+/*        MENU        */
+/*--------------------*/
+
+#menu {
+	position: fixed;
+	width: 100%;
+}
+.nopmenu {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+	z-index: 1;
+}

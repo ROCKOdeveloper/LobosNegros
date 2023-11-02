@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="RDeveloper" />
+    <meta
+      name="description"
+      content="Desarrollado en un fin de semana, con la idea de probar un framework sencillo"
+    />
+    <meta name="Copyright" content="RDeveloper" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>R</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="https://i.gifer.com/1Kte.gif"
+    />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="menu">
+      <div class="w3-bar w3-card w3-left-align w3-large w3-black w3-text-white">
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-padding-medium w3-hover-white w3-text-hover-black w3-round-large"
+          onclick="w3_open()"
+          >R</a
+        >
+      </div>
+    </div>
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-text-white w3-top w3-center"
+      style="z-index: 3; width: 300px; font-weight: bold"
+      id="mySidebar"
+    >
+      <br />
+      <a href="#" onclick="w3_close()"
+        ><h1 class="w3-padding-24 w3-center">R</h1></a
+      >
+      <a
+        href="#pursose"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white w3-text-hover-black"
+        >Propósito</a
+      >
+      <a
+        href="#plannig"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white w3-text-hover-black"
+        >Planificación</a
+      >
+      <a
+        href="#progress"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white w3-text-hover-black"
+        >Progreso</a
+      >
+      <a
+        href="#tips"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white w3-text-hover-black"
+        >Consejo</a
+      >
+    </nav>
+    <!-- Overlay -->
+    <div class="nopmenu" id="myOverlay" onclick="w3_close()"></div>
+    <header
+      class="w3-padding-64 w3-container w3-center w3-text-white background"
+    >
+      <h1 class="w3-margin w3-jumbo">R</h1>
+      <p class="w3-xlarge">Aprendo experimentando</p>
+    </header>
+    <main>
+      <div
+        id="pursose"
+        class="w3-padding-64 w3-container w3-center w3-black w3-text-white"
+      >
+        <div class="w3-content">
+          <h1>Mi primer "hola mundo!"</h1>
+          <p>
+            Para mí, todo comenzó con la incertidumbre de no saber qué hacer con
+            mi vida después de graduarme, me deje llevar por un consejo bien
+            intencionado y no me arrepiento de haber dicho que sí.
+            <br />
+            Era un curso prácticamente nuevo en la institución, "programación
+            para analítica para datos" era su nombre, el primer día ni tenía
+            uniforme, y cuando ya tenía el dichoso uniforme comenzó para mucho
+            un punto y aparte en sus vidas. La pandemia de 2020
+            <a
+              onclick="document.getElementById('id01').style.display='block'"
+              class="w3-hover-text-green w3-border-bottom w3-border-green"
+              href="#"
+              >leer más...</a
+            >
+          </p>
+          <div id="id01" class="w3-modal">
+            <div
+              class="w3-modal-content w3-animate-top w3-card-4 w3-round w3-black"
+            >
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright w3-black w3-text-white w3-hover-white w3-round"
+                >&times;</span
+              >
+              <div class="w3-container w3-padding-32 w3-text-white">
+                <h1>Mi primer "Hola mundo!"</h1>
+                <p>
+                  Para mí, todo comenzó con la incertidumbre de no saber qué
+                  hacer con mi vida después de graduarme, me deje llevar por un
+                  consejo bien intencionado y no me arrepiento de haber dicho
+                  que sí.
+                  <br />
+                  Era un curso prácticamente nuevo en la institución,
+                  "programación para analítica para datos" era su nombre, el
+                  primer día ni tenía uniforme, y cuando ya tenía el dichoso
+                  uniforme comenzó para mucho un punto y aparte en sus vidas. La
+                  pandemia de 2020, el internet cambio, la televisión cambio,
+                  las calles cambiaron, las personas cambiaron y la razón de mi
+                  vida era mi único problema, mi madre.
+                  <br />
+                  Yo veía clases por un celular prestado y al mismo veía como
+                  todo empeoraba, el miedo, la desesperación y los pensamientos
+                  negativos era lo único que existía en esos días. el
+                  aislamiento no ayudó, pero, dentro el caos y muerte, tuve mis
+                  héroes o bueno mi forma de escape.
+                  <br />
+                  Call of duty WARZONEConsolaba esos pensamientos negativos,
+                  pero al mismo tiempo mi deber de estudiar me mantenía siempre
+                  ocupado. Sí, estudiaba todo el día y jugaba de noche, era mi
+                  día a día. Mi madre y en general todos tenían su forma de
+                  sobrellevar las cosas.
+                  <br />
+                  Yo no tenía PC, todo lo hacía a papel y lápiz, si era muy
+                  difícil, pero no soy de los que se dan por vencido, hasta que
+                  mis padres con un esfuerzo sobre humano me regalaron un PC que
+                  aunque no fuera el mejor me ayudó a cumplir con mis estudios y
+                  al fin, sin pena ni gloria conseguí ser de los pocos que
+                  terminaron el curso, a decir verdad ellos eran personas con
+                  experticia en esto, algunos hasta daban por muy fácil el
+                  curso.
+                  <br />
+                  Yo por mi parte me quedaba nuevamente a la deriva, sin ningún
+                  propósito, con algo de suerte conseguí las prácticas con un
+                  señor que tenía una empresa independiente, no fue una gran
+                  decisión, pero gracia a esta misma paso lo que yo llamo mi
+                  edad media. Pasaron muchas cosas negativas que me alejaron de
+                  mis propios ideales, ideales que me forjaron antes estaban
+                  siendo puesto a prueba, resistí, persistí y adivinen,
+                  sobreviví.
+                  <br />
+                  Por suerte le conté a un compañero mi situación, él se propuso
+                  a conseguirme ayuda, y lo hizo, un instructor me citó y a los
+                  días recibí varias llamadas para entrevistarme, por otra
+                  parte, mi vida personal mejoraba y por fin respiraba aliviado.
+                  Durante estas tuve determinación, tuve el placer de trabajar
+                  para una institución muy grande en la ciudad, y conocí un
+                  mundo que me asombraba.
+                  <br />
+                  Cuando termino esa temporada, fallé. No de cualquier manera,
+                  por confiarme tomé malas decisiones financiera y con mi último
+                  pago solo tenía deudas y preocupaciones. Me sentí traicionado,
+                  digamos hasta abandonado.
+                  <br />
+                  Yo creé algo que satisfacía la necesidad de mi puesto, pero yo
+                  solo lo mantenía y un pobre tonto me remplazó. Como sentirme
+                  después de eso, me sentía en la deriva, una vez más.
+                  <br />
+                  Omito muchos detalles, pero esta es la conclusión, existe una
+                  persona que no tan solo le da trabajo a mi madre, me dio
+                  esperanzas para dedicarme a esto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="plannig"
+        class="w3-padding-64 w3-container w3-center w3-black w3-text-white background"
+      >
+        <h1>Planificación</h1>
+        <button
+          onclick="according('question1')"
+          class="w3-btn w3-block w3-border-bottom w3-border-green w3-hover-border-white"
+        >
+          Determnación
+        </button>
+        <div id="question1" class="w3-container w3-hide">
+          <p class="w3-padding-16">
+            Siendo francos, nada que yo conozca es fácil, pero no es imposible,
+            debemos de estar decididos y motivados en todo aquello que queramos
+            alcanzar.
+          </p>
+        </div>
+        <button
+          onclick="according('question2')"
+          class="w3-btn w3-block w3-border-bottom w3-border-green w3-hover-border-white"
+        >
+          Notas o apunte
+        </button>
+        <div id="question2" class="w3-container w3-hide">
+          <p class="w3-padding-16">
+            Evita desenfoque o distracciones, toma apuntes que te recuerden cuál
+            es el siguiente paso.
+          </p>
+        </div>
+        <button
+          onclick="according('question3')"
+          class="w3-btn w3-block w3-border-bottom w3-border-green w3-hover-border-white"
+        >
+          Experimenta
+        </button>
+        <div id="question3" class="w3-container w3-hide">
+          <p class="w3-padding-16">
+            Para poder ser un maestro en lo que hacemos debemos practicar, esto
+            solo se consigue si repetimos lo mismo hasta diez mil veces o en su
+            defecto experimentar y conocer cuáles son las limitaciones.
+          </p>
+        </div>
+      </div>
+      <div
+        id="progress"
+        class="w3-padding-64 w3-container w3-center w3-black w3-text-white"
+      >
+        <div class="w3-center">
+          <h1>Progreso</h1>
+          <div class="w3-third">
+            <div
+              class="w3-card w3-container w3-border w3-border-green w3-hover-border-white w3-margin w3-round"
+            >
+              <h3>Determinación</h3>
+              <p>
+                Tengo muchos planes e ideas que estoy decidido cumplir, esto me
+                encanta y seguiré aprendiendo. Aprendiendo exponencialmente y
+                poniéndolo aprueba.
+              </p>
+              <div class="w3-light-grey w3-tiny w3-margin w3-round">
+                <div class="w3-container w3-green w3-round" style="width: 100%">
+                  100%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third">
+            <div
+              class="w3-card w3-container w3-border w3-border-green w3-hover-border-white w3-margin w3-round"
+            >
+              <h3>Apuntes</h3>
+              <p>
+                El entorno de trabajo debe adaptarse a tus herraminetas, en este
+                aspecto mi herramineta de trabajo es practicamente todo lo que
+                necesito en mis dias de estudio.
+              </p>
+              <div class="w3-light-grey w3-tiny w3-margin w3-round">
+                <div class="w3-container w3-green w3-round" style="width: 54%">
+                  54%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third">
+            <div
+              class="w3-card w3-container w3-border w3-border-green w3-hover-border-white w3-margin w3-round"
+            >
+              <h3>Experimenta</h3>
+              <p>
+                Para ser bueno en esto, solo se consigue si practicamos hasta
+                diez mil veces o en su defecto experimentar y conocer cuáles son
+                las limitaciones.
+              </p>
+              <div class="w3-light-grey w3-tiny w3-margin w3-round">
+                <div class="w3-container w3-green w3-round" style="width: 30%">
+                  30%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="tips"
+        class="w3-padding-64 w3-container w3-center w3-black w3-text-white background"
+      >
+        <div class="w3-center">
+          <h2>Consejo</h2>
+        </div>
+        <div class="w3-card w3-black w3-margin">
+          <p
+            class="w3-border w3-border-green w3-hover-border-white w3-round w3-margin w3-padding-24"
+          >
+            Los errores son todas aquellas decisiones que nos llevan al mismo
+            lugar y sencillamente estamos tan vacío como al inicio, pero con
+            todo lo negativo que sea la situación somos capaces de aprender y
+            tratar de que este error no se comenta una vez más. <br />
+            De ser así, errar en lo mismo no se considera un error, es una
+            decisión.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="w3-row-padding w3-padding-32 w3-container w3-center w3-black w3-text-color"
+    >
+      <div>
+        <p>
+          &copy;Copyright
+          <a href="#" class="w3-hover-text-green"> RDeveloper</a>. All right
+          reserved.
+        </p>
+      </div>
+      <div>
+        <p>
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css"
+            target="_blank"
+            class="w3-hover-text-green w"
+            >w3.css</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
