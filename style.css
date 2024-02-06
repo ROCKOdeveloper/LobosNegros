@@ -1,45 +1,61 @@
-/*--------------------*/
-/*     BASIC STYLE    */
-/*--------------------*/
-
 html {
-	overflow-x:hidden;
-	background-color: black;
+	overflow-x: hidden;
+	background-color: white;
+	scroll-behavior: smooth;
 }
-body,h1,h2,h3,h4,h5,h6{
-	font-family: 'Courier Prime', monospace !important;
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
 	display: none;
 }
+
 a {
 	text-decoration: none;
 }
 
-p {
-	margin: 0px;
+a img {
+	width: 50px;
 }
 
-.background {
-	background-image: url("https://i.gifer.com/1Kte.gif");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+#hero {
+	background-image: url(./img/nocheestrellada.jpeg);
 	background-attachment: fixed;
-	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-/*--------------------*/
-/*        MENU        */
-/*--------------------*/
-
-#menu {
-	position: fixed;
-	width: 100%;
+#ubications {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Centrar los elementos en el contenedor */
 }
-.nopmenu {
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-	z-index: 1;
+
+#ubications div {
+	width: 90%; /* Utilizar porcentajes en lugar de tamaño fijo en píxeles */
+	max-width: 400px; /* Establecer un máximo para evitar que sea demasiado ancho en pantallas grandes */
+	margin: 10px; /* Agregar margen entre los elementos */
+	box-sizing: border-box; /* Incluir padding y border en el ancho del elemento */
+}
+
+#profile {
+	width: 300px;
+	height: 300px;
+}
+
+#teamMembers img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: -1rem;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+}
+
+#teamMembers img :first-child { 
+	margin: 0px !important; 
 }
