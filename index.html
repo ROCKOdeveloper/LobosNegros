@@ -2,516 +2,265 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0A0C" />
+  <meta name="color-scheme" content="dark" />
   <meta name="author" content="NeoBmo" />
-  <title>Club Lobos Negros</title>
-  <meta name="description" content="Club de taekwondo en Barranquilla, entrenamiento personalizado, clases para niños y preparación competitiva." />
+  <title>Club Lobos Negros | Taekwondo en Barranquilla y Soledad</title>
+  <meta name="description" content="Club de taekwondo en Barranquilla y Soledad. Clases desde los 4 años para niños, jóvenes, adultos y competidores." />
   <link rel="canonical" href="https://clublobosnegros.netlify.app/" />
-  <!-- Open graph / social media -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Club Lobos Negros" />
-  <meta property="og:description" content="Club de taekwondo en Barranquilla, entrenamiento personalizado, clases para niños y preparación competitiva." />
+  <meta property="og:description" content="Club de taekwondo en Barranquilla y Soledad. Clases desde los 4 años para niños, jóvenes, adultos y competidores." />
   <meta property="og:url" content="https://clublobosnegros.netlify.app/" />
-  <!-- TODO: generar og:image de 1200x630 para redes; mientras tanto se usa la foto del grupo -->
-  <meta property="og:image" content="https://clublobosnegros.netlify.app/img/about/group.jpg" />
-  <meta property="og:image:alt" content="Club Lobos Negros" />
   <meta property="og:locale" content="es_CO" />
-  <!-- Json-ld data structure. TODO: confirmar horarios, coordenadas y logo real del club -->
+  <!-- og:image vuelve con la fotografía real: una tarjeta rota es peor que ninguna. -->
+
+  <!-- Este JSON-LD es la única copia de datos que no se puede leer del marcado.
+       Si cambia una sede o un horario, cámbialo también aquí. -->
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SportsClub",
-        "name": "Club Lobos Negros",
-        "image": "https://clublobosnegros.netlify.app/img/about/group.jpg",
-        "@id": "https://clublobosnegros.netlify.app/#club",
-        "url": "https://clublobosnegros.netlify.app",
-        "telephone": "+573003461130",
-        "priceRange": "$100.000",
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsClub",
+      "name": "Club Lobos Negros",
+      "@id": "https://clublobosnegros.netlify.app/#club",
+      "url": "https://clublobosnegros.netlify.app",
+      "telephone": "+573003461130",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle 37c #5a-58, Barrio Las Palmas",
+        "addressLocality": "Barranquilla",
+        "addressRegion": "Atlántico",
+        "postalCode": "080006",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.94075,
+        "longitude": -74.791333
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Parque Designado",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Calle 37c #5a-58, Barrio Las Palmas",
-          "addressLocality": "Barranquilla",
+          "streetAddress": "Carrera 30 #27C-35",
+          "addressLocality": "Soledad",
           "addressRegion": "Atlántico",
-          "postalCode": "080006",
           "addressCountry": "CO"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 10.94075,
-          "longitude": -74.791333
+          "latitude": 10.9282632,
+          "longitude": -74.7741079
+        }
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Thursday"],
+          "opens": "19:00",
+          "closes": "21:00"
         },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "16:00",
-            "closes": "19:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Saturday"],
-            "opens": "09:00",
-            "closes": "12:00"
-          }
-        ],
-        "sameAs": [
-          "https://www.facebook.com/lobosnegrostaekwondo",
-          "https://www.instagram.com/club_lobosnegros/"
-        ]
-      }
-    </script>
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230A0A0C'/%3E%3Cpath d='M14 14h10v36H14zM40 14h10v36H40z' fill='%23DB1A1A'/%3E%3C/svg%3E" />
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-  <!-- Stylesheets -->
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "10:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/lobosnegrostaekwondo",
+        "https://www.instagram.com/club_lobosnegros/"
+      ]
+    }
+  </script>
+
+  <!-- Favicon: la luna del lobo, en SVG y sin archivo aparte. -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%201000'%3E%3Crect%20width='1000'%20height='1000'%20fill='%230A0A0C'/%3E%3Cpath%20transform='translate%28100%20100%29'%20fill='%23DB1A1A'%20d='M686.8%20150.7A380%20380%200%201%200%20601.4%20722.3L500%20600L440%20640L360%20548L262%20578L186%20566L146%20528L214%20516L414%20420L118%20420L70%20402L58%20366L92%20336L282%20284L336%20226L404%20198L516%2048L558%20230ZM296%20326L420%20246L408%20322L350%20346ZM540%20300L737.8%20226.0A380%20380%200%200%201%20760.2%20278.8ZM510%20430L773.8%20331.4A380%20380%200%200%201%20780.0%20404.0Z'/%3E%3C/svg%3E" />
+
+  <!-- Va antes del CSS para que el respaldo sin JS nunca parpadee. -->
+  <script>document.documentElement.classList.add("js");</script>
   <link rel="stylesheet" href="style.css" />
-  <!-- Javascripts -->
   <script src="script.js" defer></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido principal</a>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="container">
-      <a class="logo" href="#hero" aria-label="Club Lobos Negros">
-        <span class="logo-text">CLUB LOBOS NEGROS</span>
-      </a>
-      <nav aria-label="Navegación principal">
-        <ul class="nav-menu" id="nav-menu">
-          <li>
-            <a href="#about" class="nav-link" data-smooth-scroll>Nosotros</a>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- El lobo vive aquí una sola vez. Para el nuevo logo, cambia el contenido
+       de este symbol y su viewBox: todas las apariciones se actualizan. -->
+  <svg class="symbols" width="0" height="0" aria-hidden="true">
+    <symbol id="wolf" viewBox="0 0 800 800"><path fill="currentColor" d="M686.8 150.7A380 380 0 1 0 601.4 722.3L516 604L500 664L446 590L416 636L360 548L262 578L186 566L146 528L162 516L152 460L194 510L228 512L250 492L266 504L380 446L414 420L292 428L276 448L258 430L242 434L214 490L190 432L118 420L70 402L58 366L92 336L282 284L336 226L404 198L516 48L558 230ZM310 318L410 256L398 314L346 334ZM430 366L516 338L446 424ZM472 194L512 122L526 204ZM560 276L734.9 220.5A380 380 0 0 1 748.4 248.2ZM528 346L757.9 272.2A380 380 0 0 1 769.5 311.2ZM500 424L774.5 335.9A380 380 0 0 1 779.7 383.7ZM512 500L779.7 414.0A380 380 0 0 1 774.9 462.1ZM548 566L767.8 495.4A380 380 0 0 1 754.8 536.2Z" /></symbol>
+    <symbol id="wolf-icon" viewBox="0 0 800 800"><path fill="currentColor" d="M686.8 150.7A380 380 0 1 0 601.4 722.3L500 600L440 640L360 548L262 578L186 566L146 528L214 516L414 420L118 420L70 402L58 366L92 336L282 284L336 226L404 198L516 48L558 230ZM296 326L420 246L408 322L350 346ZM540 300L737.8 226.0A380 380 0 0 1 760.2 278.8ZM510 430L773.8 331.4A380 380 0 0 1 780.0 404.0Z" /></symbol>
+  </svg>
+
+  <header class="bar">
+    <a class="seal" href="#hero" aria-label="Club Lobos Negros, volver al inicio" data-scroll-top>
+      <svg viewBox="0 0 800 800" aria-hidden="true"><use href="#wolf-icon" /></svg>
+    </a>
+    <a class="bar-action" href="https://wa.me/573003461130?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases." target="_blank" rel="noopener noreferrer">Escríbenos</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <svg class="hero-wolf" viewBox="0 0 800 800" aria-hidden="true"><use href="#wolf" /></svg>
+      <div class="hero-copy">
+        <p class="voice"><b lang="ko">차렷</b> Charyeot, atención</p>
+        <h1 class="hero-title" id="hero-title">
+          <small>Club de taekwondo</small>
+          <span class="hero-line hero-line-first"><span>Lobos</span></span>
+          <span class="hero-line hero-line-second"><span>Negros</span></span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="section section-light" id="who" aria-labelledby="who-title">
+      <div class="section-inner">
+        <p class="voice"><b lang="ko">경례</b> Kyeongrye, saludo</p>
+        <h2 id="who-title">Antes del primer golpe, se saluda.</h2>
+        <p class="lead">
+          Aquí el combate empieza con una reverencia y termina con otra. En medio
+          entrenan niños que dan su primera patada, adultos que buscan disciplina
+          y competidores que apuntan al podio, todos con el mismo rigor y la misma
+          cercanía.
+        </p>
+        <h3 class="tenets-title">Cinco principios, dentro y fuera del área</h3>
+        <ol class="tenets">
+          <li>Cortesía</li>
+          <li>Integridad</li>
+          <li>Perseverancia</li>
+          <li>Autocontrol</li>
+          <li>Espíritu indomable</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="trajectory" aria-labelledby="trajectory-title">
+      <div class="section-inner">
+        <h2 id="trajectory-title">Esta historia se escribe entrenando.</h2>
+        <!-- Borrador sin fechas ni títulos inventados. Cada hito se ajusta con
+             lo que confirme la maestra; un hito sin confirmar se elimina. -->
+        <div class="milestones-wrap">
+          <canvas class="ink" data-ink aria-hidden="true"></canvas>
+          <ol class="milestones" data-ink-list>
+            <li>
+              <h3>El comienzo</h3>
+              <p>Hace más de 15 años, lo que empezó como una pasión se convirtió en una familia.</p>
+            </li>
+            <li>
+              <h3>La exigencia de la forma</h3>
+              <p>El poomsae de nuestra maestra tiene recorrido nacional e internacional, y esa precisión entra a cada clase.</p>
+            </li>
+            <li>
+              <h3>Un nombre en el combate</h3>
+              <p>Combate a combate, el club se hizo conocer por su forma de competir.</p>
+            </li>
+            <li>
+              <h3>Hoy</h3>
+              <p>Somos un grupo que entrena en Barranquilla y Soledad, con alumnos desde los 4 años.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="classes" aria-labelledby="classes-title">
+      <div class="section-inner">
+        <p class="voice"><b lang="ko">준비</b> Joonbi, prepárate</p>
+        <h2 id="classes-title">Todos empiezan por algún lado.</h2>
+        <dl class="classes">
+          <div>
+            <dt>Desde los 4 años</dt>
+            <dd>Taekwondo infantil: coordinación, disciplina y confianza, usando el juego para aprender de verdad.</dd>
+          </div>
+          <div>
+            <dt>Jóvenes y adultos</dt>
+            <dd>Empieces de cero o lleves años practicando, el entrenamiento se adapta a tu nivel.</dd>
+          </div>
+          <div>
+            <dt>Quienes compiten</dt>
+            <dd>Preparación técnica, física y mental para quienes compiten o quieren hacerlo.</dd>
+          </div>
+          <div>
+            <dt>A cualquier edad</dt>
+            <dd>Autodefensa y acondicionamiento: técnicas prácticas y trabajo físico, sin experiencia previa.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section-blood" id="combat" aria-labelledby="combat-title">
+      <svg class="combat-wolf" viewBox="0 0 800 800" aria-hidden="true"><use href="#wolf" /></svg>
+      <div class="section-inner">
+        <p class="voice"><b lang="ko">시작</b> Shijak, ¡comiencen!</p>
+        <h2 id="combat-title">Aquí nos conocen por el combate.</h2>
+        <p class="lead">
+          Dos personas, un saludo y todo lo entrenado. Quien quiera subir al área
+          se prepara aquí.
+        </p>
+        <!-- Los resultados entran aquí cuando el club confirme torneo, año y
+             resultado. Sin datos, la lista no existe. -->
+      </div>
+    </section>
+
+    <section class="section section-dark" id="visit" aria-labelledby="visit-title">
+      <div class="section-inner">
+        <p class="voice"><b lang="ko">그만</b> Keuman, alto</p>
+        <h2 id="visit-title">El combate termina. Tu turno empieza.</h2>
+
+        <dl class="schedule">
+          <div><dt>Martes y jueves</dt><dd>7:00 a 9:00 PM</dd></div>
+          <div><dt>Sábados y domingos</dt><dd>8:00 a 10:00 AM</dd></div>
+        </dl>
+
+        <a class="cta" href="https://wa.me/573003461130?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases." target="_blank" rel="noopener noreferrer">Pregunta por WhatsApp</a>
+
+        <h3 class="places-title">Dónde entrenamos</h3>
+
+        <div class="map-panel" data-map-panel>
+          <div class="map-switch" role="group" aria-label="Elegir qué ver en el mapa">
+            <button type="button" data-map-view="both" aria-pressed="true">Las dos</button>
+            <button type="button" data-map-view="inmaculada" aria-pressed="false">Barranquilla</button>
+            <button type="button" data-map-view="soledad" aria-pressed="false">Soledad</button>
+          </div>
+          <div class="map" id="map-container">
+            <div class="map-canvas" id="map"></div>
+            <p class="map-status" data-map-status>Cargando el mapa…</p>
+          </div>
+        </div>
+
+        <!-- Fuente única de las sedes: el mapa lee de aquí nombre y coordenadas.
+             La lista siempre está visible, así que sin mapa nada se pierde. -->
+        <ul class="locations">
+          <li class="location" data-location="inmaculada" data-label="La Inmaculada" data-lat="10.940750" data-lng="-74.791333">
+            <p class="location-city">Barranquilla</p>
+            <h4>Parque La Inmaculada</h4>
+            <p>Calle 37c #5a-58, Barrio Las Palmas, Sur Oriente</p>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=10.940750,-74.791333" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
           </li>
-          <li>
-            <a href="#services" class="nav-link" data-smooth-scroll>Servicios</a>
-          </li>
-          <li>
-            <a href="#benefits" class="nav-link" data-smooth-scroll>Beneficios</a>
-          </li>
-          <li>
-            <a href="#testimonials" class="nav-link" data-smooth-scroll>Testimonios</a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-link" data-smooth-scroll>Contacto</a>
+          <li class="location" data-location="soledad" data-label="Designado" data-lat="10.9282632" data-lng="-74.7741079">
+            <p class="location-city">Soledad</p>
+            <h4>Parque Designado</h4>
+            <p>Carrera 30 #27C-35</p>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=10.9282632,-74.7741079" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
           </li>
         </ul>
-      </nav>
-      <button type="button" class="mobile-menu-btn" aria-label="Menú móvil" aria-expanded="false" aria-controls="nav-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-  <div class="menu-scrim" aria-hidden="true"></div>
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero" id="hero" aria-label="Club Lobos Negros">
-      <canvas id="hero-particles" class="hero-canvas" aria-hidden="true"></canvas>
-      <div class="hero-content">
-        <div class="container">
-          <h1 class="hero-title" data-aos="fade-up">Club Lobos Negros</h1>
-        </div>
-      </div>
-    </section>
-    <!-- About us -->
-    <section class="about" id="about" aria-label="Sobre el club">
-      <div class="container">
-        <div class="about-content">
-          <h2 class="section-title" data-aos="fade-up">Sobre nosotros</h2>
-          <div class="about-text" data-aos="fade-right">
-            <p>
-              Hace más de 15 años lo que empezó como una pasión se convirtió en algo que nos
-              enorgullece:
-              una familia. No lo decimos de manera figurada. Acá cada integrante conoce a sus compañeros por nombre,
-              sabe cuándo alguien tuvo un mal día y entiende lo que significa
-              ponerse un cinturón nuevo por primera vez.
-              Somos un club con formación de alto nivel. Trabajamos con niños que dan su primera patada, con adultos que
-              buscan disciplina y movimiento, y con competidores que apuntan al podio
-              y a todos los tratamos con el mismo rigor y la misma cercanía. Porque para nosotros el taekwondo no
-              termina en el entrenamiento: es una forma de pararse en el mundo, de relacionarse con los demás,
-              de superarse sin rendirse. Eso es lo que llevamos 15 años enseñando.
-            </p>
-          </div>
-          <div class="about-image" data-aos="fade-left">
-            <div class="about-main-media">
-              <img class="main-photo" id="about-main" src="img/about/group.jpg" alt="Fotografía del club Lobos Negros" loading="eager" />
-              <div class="image-placeholder" aria-hidden="true">
-                <span class="placeholder-text">Próximamente: fotografía del club</span>
-              </div>
-            </div>
-            <div class="about-team">
-              <p class="team-label">Integrantes principales</p>
-              <!-- TODO: confirmar nombres y cintas reales de los integrantes (fotos: img/about/member-1..6.jpg) -->
-              <ul class="team-group" aria-label="Integrantes principales del club">
-                <li class="team-item" data-photo="img/about/member-1.jpg">
-                  <button type="button" class="team-avatar" aria-label="Andrés Camargo">
-                    <span class="team-img-wrapper" aria-hidden="true"></span>
-                  </button>
-                  <span class="team-tooltip" aria-hidden="true">
-                    <span class="member-name">Andrés Camargo</span>
-                  </span>
-                </li>
-                <li class="team-item" data-photo="img/about/member-2.jpg">
-                  <button type="button" class="team-avatar" aria-label="Laura Peña">
-                    <span class="team-img-wrapper" aria-hidden="true"></span>
-                  </button>
-                  <span class="team-tooltip" aria-hidden="true">
-                    <span class="member-name">Laura Peña</span>
-                  </span>
-                </li>
-                <li class="team-item" data-photo="img/about/member-3.jpg">
-                  <button type="button" class="team-avatar" aria-label="Daniel Ríos">
-                    <span class="team-img-wrapper" aria-hidden="true"></span>
-                  </button>
-                  <span class="team-tooltip" aria-hidden="true">
-                    <span class="member-name">Daniel Ríos</span>
-                  </span>
-                </li>
-                <li class="team-item" data-photo="img/about/member-4.jpg">
-                  <button type="button" class="team-avatar" aria-label="Valentina Bonilla">
-                    <span class="team-img-wrapper" aria-hidden="true"></span>
-                  </button>
-                  <span class="team-tooltip" aria-hidden="true">
-                    <span class="member-name">Valentina Bonilla</span>
-                  </span>
-                </li>
-                <li class="team-item" data-photo="img/about/member-5.jpg">
-                  <button type="button" class="team-avatar" aria-label="Jorge Melo">
-                    <span class="team-img-wrapper" aria-hidden="true"></span>
-                  </button>
-                  <span class="team-tooltip" aria-hidden="true">
-                    <span class="member-name">Jorge Melo</span>
-                  </span>
-                </li>
-                <li class="team-item" data-photo="img/about/member-6.jpg">
-                  <button type="button" class="team-avatar" aria-label="Carolina Torres">
-                    <span class="team-img-wrapper" aria-hidden="true"></span>
-                  </button>
-                  <span class="team-tooltip" aria-hidden="true">
-                    <span class="member-name">Carolina Torres</span>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services -->
-    <section class="services" id="services" aria-label="Servicios ofrecidos">
-      <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Nuestros Servicios</h2>
-        <div class="services-grid">
-          <article class="service-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M100,124a12,12,0,1,1,12-12A12,12,0,0,1,100,124Zm56-24a12,12,0,1,0,12,12A12,12,0,0,0,156,100Zm-4.27,45.23a45,45,0,0,1-47.46,0,8,8,0,0,0-8.54,13.54,61,61,0,0,0,64.54,0,8,8,0,0,0-8.54-13.54ZM216,80v96a32.06,32.06,0,0,1-24,31v17a16,16,0,0,1-16,16H80a16,16,0,0,1-16-16V207a32.06,32.06,0,0,1-24-31V80A32,32,0,0,1,72,48H88V32a16,16,0,0,1,16-16h48a16,16,0,0,1,16,16V48h16A32,32,0,0,1,216,80ZM104,48h48V32H104Zm72,176V208H80v16ZM200,80a16,16,0,0,0-16-16H72A16,16,0,0,0,56,80v96a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16Z">
-                </path>
-              </svg>
-            </div>
-            <h3>Taekwondo Infantil</h3>
-            <p>
-              Para los más pequeños desde los 4 años. Trabajamos coordinación,
-              disciplina y confianza en un ambiente que hace del juego una herramienta de aprendizaje real.
-            </p>
-          </article>
-          <article class="service-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z">
-                </path>
-              </svg>
-            </div>
-            <h3>Juvenil y Adultos</h3>
-            <p>
-              Sin importar si empiezas desde cero o llevas años practicando, el entrenamiento se adapta a tu nivel.
-              El objetivo siempre es el tuyo.
-            </p>
-          </article>
-          <article class="service-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z">
-                </path>
-              </svg>
-            </div>
-            <h3>Alto Rendimiento</h3>
-            <p>
-              Para quienes compiten o quieren hacerlo. Preparación técnica, física y mental con instructores
-              certificados que conocen el deporte desde adentro.
-            </p>
-          </article>
-          <article class="service-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M248,120h-8V88a16,16,0,0,0-16-16H208V64a16,16,0,0,0-16-16H168a16,16,0,0,0-16,16v56H104V64A16,16,0,0,0,88,48H64A16,16,0,0,0,48,64v8H32A16,16,0,0,0,16,88v32H8a8,8,0,0,0,0,16h8v32a16,16,0,0,0,16,16H48v8a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V136h48v56a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16v-8h16a16,16,0,0,0,16-16V136h8a8,8,0,0,0,0-16ZM32,168V88H48v80Zm56,24H64V64H88V192Zm104,0H168V64h24V175.82c0,.06,0,.12,0,.18s0,.12,0,.18V192Zm32-24H208V88h16Z">
-                </path>
-              </svg>
-            </div>
-            <h3>Autodefensa y Acondicionamiento</h3>
-            <p>
-              Técnicas prácticas combinadas con trabajo físico real. Útil para cualquier edad, sin necesidad de
-              experiencia previa.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- Benefits -->
-    <section class="benefits" id="benefits" aria-label="Beneficios del club">
-      <div class="container">
-        <h2 class="section-title" data-aos="fade-up">¿Por qué entrenar con nosotros?</h2>
-        <div class="accordion">
-          <div class="accordion-item">
-            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="benefit-1-content" id="benefit-1">
-              Ambiente inclusivo
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-body" id="benefit-1-content">
-              <p>
-                Acá no hay perfil de estudiante ideal.(edad, condición física, experiencia). Te encontrás con gente que
-                estuvo en tu mismo lugar. El club crece cuando crecen sus miembros.
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="benefit-2-content" id="benefit-2">
-              Desarrollo Integral
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-body" id="benefit-2-content">
-              <p>
-                No solo técnica: fortalecemos carácter, autoconfianza, respeto y
-                liderazgo en nuestros atletas.
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="benefit-3-content" id="benefit-3">
-              Precios Accesibles
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-body" id="benefit-3-content">
-              <p>
-                Planes pensados para que el taekwondo no sea un privilegio. Queremos que quien quiera entrenar, pueda.
-                Así de simple.
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="benefit-4-content" id="benefit-4">
-              Seguimiento Personalizado
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="accordion-body" id="benefit-4-content">
-              <p>
-                Nada de planes genéricos. Llevamos registro del avance de cada atleta, ajustamos la
-                intensidad a su meta y el instructor acompaña cada etapa del camino.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials" aria-label="Testimonios de nuestra comunidad">
-      <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Lo que dice nuestra comunidad</h2>
-      </div>
-      <div class="testimonials-track" role="group" aria-roledescription="carousel" aria-label="Testimonios de la comunidad" data-carousel>
-        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonio 1 de 4" data-aos="fade-up" data-aos-delay="100">
-          <div class="testimonial-card">
-            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
-            <p class="testimonial-quote">El cambio en la disciplina y la seguridad de mis hijos ha sido increíble
-              desde que entraron a Lobos Negros. El ambiente es familiar, seguro y muy profesional.</p>
-            <div class="testimonial-author">
-              <div class="testimonial-team" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21c0-2.8-2.2-5-5-5s-5 2.2-5 5" />
-                  <circle cx="12" cy="7" r="4" />
-                  <path d="M23 21c0-2.8-2.2-5-5-5" />
-                  <circle cx="19" cy="5" r="3" />
-                </svg>
-              </div>
-              <div class="testimonial-meta">
-                <h3 class="author-name">Familia Mendoza Silva</h3>
-                <span class="author-role">Padres de alumnos infantiles</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonio 2 de 4" data-aos="fade-up" data-aos-delay="200">
-          <div class="testimonial-card">
-            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
-            <p class="testimonial-quote">Empecé buscando acondicionamiento físico y encontré una verdadera pasión. Los
-              entrenamientos son exigentes pero el apoyo de los instructores te impulsa a dar el 100%.</p>
-            <div class="testimonial-author">
-              <div class="testimonial-team" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="testimonial-meta">
-                <h3 class="author-name">Mateo Guerrero</h3>
-                <span class="author-role">Cinturón Rojo — Juvenil</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonio 3 de 4" data-aos="fade-up" data-aos-delay="300">
-          <div class="testimonial-card">
-            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
-            <p class="testimonial-quote">La preparación táctica y mental que recibí para torneos departamentales marcó
-              la diferencia. Lobos Negros te entrena para ganar tanto en el tatami como en la vida.</p>
-            <div class="testimonial-author">
-              <div class="testimonial-team" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="8" r="5" />
-                  <path d="M20 21a8 8 0 0 0-16 0" />
-                </svg>
-              </div>
-              <div class="testimonial-meta">
-                <h3 class="author-name">Valeria Ospina</h3>
-                <span class="author-role">Medallista Regional de Poomsae</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonio 4 de 4" data-aos="fade-up" data-aos-delay="400">
-          <div class="testimonial-card">
-            <div class="testimonial-quote-icon" aria-hidden="true">“</div>
-            <p class="testimonial-quote">Tenía dudas de empezar taekwondo siendo adulto, pero el recibimiento y la
-              metodología paso a paso me dieron total confianza. He mejorado mi salud y liberado el estrés.</p>
-            <div class="testimonial-author">
-              <div class="testimonial-team" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </div>
-              <div class="testimonial-meta">
-                <h3 class="author-name">David Restrepo</h3>
-                <span class="author-role">Acondicionamiento & Adultos</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact us -->
-    <section class="contact-social" id="contact" aria-label="Contacto y redes sociales">
-      <div class="contact-bg-elements">
-        <div class="contact-circle contact-circle-1"></div>
-        <div class="contact-circle contact-circle-2"></div>
-      </div>
-      <div class="container contact-inner">
-        <h2 class="section-title" data-aos="fade-up">¡Estamos Listos!</h2>
-        <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
-          ¿Listo para formar parte de la familia Lobos Negros? Conecta con
-          nosotros a través de nuestras redes sociales y comienza tu viaje hoy.
-        </p>
-        <div class="social-links" data-aos="fade-up" data-aos-delay="200">
-          <a href="https://wa.me/+573003461130" class="social-link" data-brand="whatsapp" title="WhatsApp" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
-            <span class="social-icon">
-              <svg fill="#000000" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z" />
-                <path
-                  d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z" />
-              </svg>
-            </span>
-            <span class="social-tooltip">WhatsApp</span>
-          </a>
-          <a href="https://www.instagram.com/club_lobosnegros/" class="social-link" data-brand="instagram" title="Instagram" aria-label="Seguir en Instagram" target="_blank" rel="noopener noreferrer">
-            <span class="social-icon">
-              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                  fill="#0F0F0F" />
-                <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-                  fill="#0F0F0F" />
-              </svg>
-            </span>
-            <span class="social-tooltip">Instagram</span>
-          </a>
-          <a href="https://www.facebook.com/lobosnegrostaekwondo" class="social-link" data-brand="facebook" title="Facebook" aria-label="Seguir en Facebook" target="_blank" rel="noopener noreferrer">
-            <span class="social-icon">
-              <svg height="2500" viewBox="37.29 0 80.559 155.139" width="2500" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761z"
-                  fill="#1a1b1f" />
-              </svg>
-            </span>
-            <span class="social-tooltip">Facebook</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- Location -->
-    <section class="contact-location" aria-label="Ubicación y horarios">
-      <div class="container">
-        <div class="maps-wrapper">
-          <div class="maps-column">
-            <div class="map-container" id="map-container">
-              <div id="map"></div>
-              <div class="map-loading">
-                <p>Cargando ubicación...</p>
-              </div>
-            </div>
-          </div>
-          <div class="info-column">
-            <div class="location-card">
-              <h3 class="location-title">Ubicación de Entrenamiento</h3>
-              <div class="location-detail">
-                <h4>Parque La Inmaculada</h4>
-                <p class="location-address">
-                  Calle 37c #5a58<br />
-                  Barrio Las Palmas<br />
-                  Sur Oriente, Barranquilla<br />
-                  Atlántico, Colombia
-                </p>
-              </div>
-              <div class="location-detail">
-                <h4>Horario de Entrenamiento</h4>
-                <!-- TODO: confirmar horario real con el dueño (fuente única con JSON-LD) -->
-                <p>
-                  Lunes a Viernes: 4:00 PM - 7:00 PM<br />
-                  Sábado: 9:00 AM - 12:00 PM<br />
-                  Domingo: Cerrado
-                </p>
-              </div>
-              <div class="location-actions">
-                <a href="https://www.google.com/maps?q=10.940750,-74.791333" class="btn-directions" target="_blank" rel="noopener noreferrer">Cómo Llegar</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p class="visually-hidden" role="status" aria-live="polite" data-map-announcer></p>
       </div>
     </section>
   </main>
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p class="footer-text">
-        &copy; <span id="year"></span> <strong>Club Lobos Negros.</strong>
-        Cortesía, integridad, perseverancia, autocontrol y espíritu indomable.
-      </p>
-    </div>
-  </footer>
-</body>
 
+  <footer class="footer">
+    <p>Club Lobos Negros. Cortesía, integridad, perseverancia, autocontrol y espíritu indomable.</p>
+    <ul class="social">
+      <li><a href="https://www.instagram.com/club_lobosnegros/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://www.facebook.com/lobosnegrostaekwondo" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+    </ul>
+  </footer>
+
+  <!-- En el teléfono la acción queda bajo el pulgar. Se oculta al llegar a Visita,
+       donde ya está el botón grande. -->
+  <a class="thumb-action" href="https://wa.me/573003461130?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases." target="_blank" rel="noopener noreferrer" data-thumb-action>Escríbenos por WhatsApp</a>
+</body>
 </html>
